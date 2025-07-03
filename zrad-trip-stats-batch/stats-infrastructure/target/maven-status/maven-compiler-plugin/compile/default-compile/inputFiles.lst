@@ -1,0 +1,10 @@
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-trip-stats-batch\stats-infrastructure\src\main\java\ma\zrad\system\stats\batch\infra\config\ZradDbConfig.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-trip-stats-batch\stats-infrastructure\src\main\java\ma\zrad\system\stats\batch\infra\mapper\GlobalMapper.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-trip-stats-batch\stats-infrastructure\src\main\java\ma\zrad\system\stats\batch\infra\persistence\jpa\adapter\EventBusinessRepositoryAdapter.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-trip-stats-batch\stats-infrastructure\src\main\java\ma\zrad\system\stats\batch\infra\persistence\jpa\adapter\VehicleTripAnalysisRepositoryAdapter.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-trip-stats-batch\stats-infrastructure\src\main\java\ma\zrad\system\stats\batch\infra\persistence\jpa\adapter\VehicleTripStatsRepositoryAdapter.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-trip-stats-batch\stats-infrastructure\src\main\java\ma\zrad\system\stats\batch\infra\persistence\jpa\repository\EventBusinessJpaRepository.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-trip-stats-batch\stats-infrastructure\src\main\java\ma\zrad\system\stats\batch\infra\persistence\jpa\repository\VehicleTripAnalysisJpaRepository.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-trip-stats-batch\stats-infrastructure\src\main\java\ma\zrad\system\stats\batch\infra\persistence\jpa\repository\VehicleTripAnomalyJpaRepository.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-trip-stats-batch\stats-infrastructure\src\main\java\ma\zrad\system\stats\batch\infra\persistence\jpa\repository\VehicleTripInfractionJpaRepository.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-trip-stats-batch\stats-infrastructure\src\main\java\ma\zrad\system\stats\batch\infra\persistence\jpa\repository\VehicleTripValidJpaRepository.java

@@ -1,0 +1,5 @@
+ma\zrad\system\metrics\batch\domain\port\out\EventBusinessRepositoryPort.class
+ma\zrad\system\metrics\batch\domain\port\in\VehicleTripSummaryService.class
+ma\zrad\system\metrics\batch\domain\port\out\ReferentialRegionApiPort.class
+ma\zrad\system\metrics\batch\domain\port\in\EventBusinessService.class
+ma\zrad\system\metrics\batch\domain\port\out\VehicleTripSummaryRepositoryPort.class

@@ -1,0 +1,7 @@
+ma\zrad\system\trip\batch\infra\config\ZradDbConfig.class
+ma\zrad\system\trip\batch\infra\mapper\GlobalMapper.class
+ma\zrad\system\trip\batch\infra\persistence\jpa\adapter\EventBusinessRepositoryAdapter.class
+ma\zrad\system\trip\batch\infra\mapper\GlobalMapperImpl.class
+ma\zrad\system\trip\batch\infra\persistence\jpa\repository\VehicleTripJpaRepository.class
+ma\zrad\system\trip\batch\infra\persistence\jpa\adapter\VehicleTripAnalysisRepositoryAdapter.class
+ma\zrad\system\trip\batch\infra\persistence\jpa\repository\EventBusinessJpaRepository.class

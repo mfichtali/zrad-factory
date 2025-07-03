@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="300 seconds">
+
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    <!--  Spring variables  -->
+    <springProperty scope="context" name="SPRING_APPLICATION_NAME" source="application.service-id"
+                    defaultValue="zrad-ref-core-service"/>
+
+    <property name="SPRING_PROFILES_ACTIVE" value="${ENV_TARGET:-dev}"/>
+    <property name="DATE_FORMAT_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS}"/>
+    <property name="LOG_PATH" value="${CONTAINER_LOG_PATH:-C:\mfichtali\projects\zrad-system\zrad-volumes\loggers}"/>
+    <property name="CONSOLE_LOG_PATTERN"
+              value="${DATE_FORMAT_PATTERN} %clr(%-5level) [${SPRING_APPLICATION_NAME},%X{traceId:-},%X{spanId:-}] ${PID:- } -- [%thread] %c{2}:%L - %msg%n"/>
+
+    <appender name="CONSOLE_APPENDER" class="ch.qos.logback.core.ConsoleAppender">
+        <layout>
+            <Pattern>${CONSOLE_LOG_PATTERN}</Pattern>
+        </layout>
+    </appender>
+
+    <appender name="ROLLING_JSON_FILE_APPENDER" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/${SPRING_PROFILES_ACTIVE}/${SPRING_APPLICATION_NAME}-elk-json.log</file>
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder"/>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>
+                ${LOG_PATH}/${SPRING_PROFILES_ACTIVE}/archived/${SPRING_APPLICATION_NAME}-elk-json.%d{yyyy-MM-dd}.%i.log
+            </fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy
+                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFileNamingAndTriggeringPolicy">
+                <maxFileSize>5MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <maxHistory>10</maxHistory>
+            <totalSizeCap>30MB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE_APPENDER"/>
+        <appender-ref ref="ROLLING_JSON_FILE_APPENDER"/>
+    </root>
+
+</configuration>

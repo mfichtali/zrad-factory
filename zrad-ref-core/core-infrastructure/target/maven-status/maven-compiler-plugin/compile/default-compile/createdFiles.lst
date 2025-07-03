@@ -1,0 +1,14 @@
+ma\zrad\system\ref\core\infra\config\ZradRefCoreScanPackages.class
+ma\zrad\system\ref\core\infra\mapper\GlobalMapper.class
+ma\zrad\system\ref\core\infra\persistence\jpa\entity\RegionRef.class
+ma\zrad\system\ref\core\infra\persistence\jpa\entity\SpeedSectionRef.class
+ma\zrad\system\ref\core\infra\persistence\jpa\repository\RegionRefJpaRepository.class
+ma\zrad\system\ref\core\infra\ZradRefCoreApplication.class
+ma\zrad\system\ref\core\infra\persistence\jpa\entity\SectionRef.class
+ma\zrad\system\ref\core\infra\rest\ApiReferentialCoreResource.class
+ma\zrad\system\ref\core\infra\config\CoreAppConfig.class
+ma\zrad\system\ref\core\infra\persistence\jpa\entity\base\AbstractZradEntity.class
+ma\zrad\system\ref\core\infra\persistence\jpa\entity\RadarRef.class
+ma\zrad\system\ref\core\infra\persistence\jpa\entity\base\AbstractEntity.class
+ma\zrad\system\ref\core\infra\mapper\GlobalMapperImpl.class
+ma\zrad\system\ref\core\infra\persistence\jpa\adapter\RegionRefRepositoryAdapter.class

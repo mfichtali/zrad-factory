@@ -1,0 +1,13 @@
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-ref-core\core-infrastructure\src\main\java\ma\zrad\system\ref\core\infra\config\CoreAppConfig.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-ref-core\core-infrastructure\src\main\java\ma\zrad\system\ref\core\infra\config\ZradRefCoreScanPackages.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-ref-core\core-infrastructure\src\main\java\ma\zrad\system\ref\core\infra\mapper\GlobalMapper.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-ref-core\core-infrastructure\src\main\java\ma\zrad\system\ref\core\infra\persistence\jpa\adapter\RegionRefRepositoryAdapter.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-ref-core\core-infrastructure\src\main\java\ma\zrad\system\ref\core\infra\persistence\jpa\entity\base\AbstractEntity.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-ref-core\core-infrastructure\src\main\java\ma\zrad\system\ref\core\infra\persistence\jpa\entity\base\AbstractZradEntity.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-ref-core\core-infrastructure\src\main\java\ma\zrad\system\ref\core\infra\persistence\jpa\entity\RadarRef.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-ref-core\core-infrastructure\src\main\java\ma\zrad\system\ref\core\infra\persistence\jpa\entity\RegionRef.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-ref-core\core-infrastructure\src\main\java\ma\zrad\system\ref\core\infra\persistence\jpa\entity\SectionRef.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-ref-core\core-infrastructure\src\main\java\ma\zrad\system\ref\core\infra\persistence\jpa\entity\SpeedSectionRef.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-ref-core\core-infrastructure\src\main\java\ma\zrad\system\ref\core\infra\persistence\jpa\repository\RegionRefJpaRepository.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-ref-core\core-infrastructure\src\main\java\ma\zrad\system\ref\core\infra\rest\ApiReferentialCoreResource.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-ref-core\core-infrastructure\src\main\java\ma\zrad\system\ref\core\infra\ZradRefCoreApplication.java

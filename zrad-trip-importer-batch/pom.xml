@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>ma.zrad.system.bom</groupId>
+        <artifactId>bom-hexa-spring-boot-3x-21jv</artifactId>
+        <version>3.4</version>
+    </parent>
+
+    <groupId>ma.zrad.system.importer.batch.hexa</groupId>
+    <artifactId>zrad-trip-importer-batch</artifactId>
+    <version>1.0.0</version>
+    <name>ZRAD Trip Importer Batch (ZTIB) - HEXA</name>
+    <packaging>pom</packaging>
+
+    <properties>
+        <module.final.name>zrad01-importer</module.final.name>
+    </properties>
+
+    <modules>
+        <module>domain</module>
+        <module>business</module>
+        <module>infrastructure</module>
+        <module>batch</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>ma.zrad.system.importer.batch.hexa</groupId>
+                <artifactId>domain</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ma.zrad.system.importer.batch.hexa</groupId>
+                <artifactId>business</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ma.zrad.system.importer.batch.hexa</groupId>
+                <artifactId>infrastructure</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ma.zrad.system.importer.batch.hexa</groupId>
+                <artifactId>batch</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+
+        <!-- ZRAD DB migration -->
+        <dependency>
+            <groupId>ma.zrad.system.db.migration</groupId>
+            <artifactId>zrad-migration</artifactId>
+        </dependency>
+
+        <!-- ZRAD Batch Common -->
+        <dependency>
+            <groupId>ma.zrad.system.batch.common</groupId>
+            <artifactId>zrad-batch-common</artifactId>
+        </dependency>
+
+        <!-- commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+
+        <!-- commons-collections4 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- logstash-logback-encoder -->
+        <dependency>
+            <groupId>net.logstash.logback</groupId>
+            <artifactId>logstash-logback-encoder</artifactId>
+        </dependency>
+
+        <!-- spring-boot-starter-logging -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <executions>
+                    <!-- Active l'agent JaCoCo pendant les tests -->
+                    <execution>
+                        <id>prepare-agent</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

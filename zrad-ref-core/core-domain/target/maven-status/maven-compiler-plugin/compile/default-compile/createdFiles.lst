@@ -1,0 +1,6 @@
+ma\zrad\system\ref\core\domain\port\out\RegionRefRepositoryPort.class
+ma\zrad\system\ref\core\domain\model\SectionDomain.class
+ma\zrad\system\ref\core\domain\model\RadarDomain.class
+ma\zrad\system\ref\core\domain\model\RegionDomain.class
+ma\zrad\system\ref\core\domain\model\SpeedSectionDomain.class
+ma\zrad\system\ref\core\domain\port\in\RegionReferentialService.class

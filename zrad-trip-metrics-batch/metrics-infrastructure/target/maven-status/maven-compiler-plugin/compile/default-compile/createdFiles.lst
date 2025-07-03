@@ -1,0 +1,9 @@
+ma\zrad\system\metrics\batch\infra\persistence\jpa\repository\EventBusinessJpaRepository.class
+ma\zrad\system\metrics\batch\infra\persistence\jpa\adapter\VehicleTripSummaryRepositoryAdapter.class
+ma\zrad\system\metrics\batch\infra\mapper\GlobalMapper.class
+ma\zrad\system\metrics\batch\infra\config\ZradDbConfig.class
+ma\zrad\system\metrics\batch\infra\mapper\GlobalMapperImpl.class
+ma\zrad\system\metrics\batch\infra\persistence\jpa\repository\VehicleTripMonthlySummaryJpaRepository.class
+ma\zrad\system\metrics\batch\infra\config\ZradScanPackages.class
+ma\zrad\system\metrics\batch\infra\persistence\jpa\adapter\EventBusinessRepositoryAdapter.class
+ma\zrad\system\metrics\batch\infra\persistence\jpa\repository\VehicleTripDailySummaryJpaRepository.class

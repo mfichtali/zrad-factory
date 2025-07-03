@@ -1,0 +1,11 @@
+ma\zrad\system\stats\batch\infra\config\ZradDbConfig.class
+ma\zrad\system\stats\batch\infra\mapper\GlobalMapper.class
+ma\zrad\system\stats\batch\infra\persistence\jpa\repository\VehicleTripAnalysisJpaRepository.class
+ma\zrad\system\stats\batch\infra\persistence\jpa\adapter\EventBusinessRepositoryAdapter.class
+ma\zrad\system\stats\batch\infra\mapper\GlobalMapperImpl.class
+ma\zrad\system\stats\batch\infra\persistence\jpa\repository\VehicleTripInfractionJpaRepository.class
+ma\zrad\system\stats\batch\infra\persistence\jpa\repository\VehicleTripValidJpaRepository.class
+ma\zrad\system\stats\batch\infra\persistence\jpa\adapter\VehicleTripStatsRepositoryAdapter.class
+ma\zrad\system\stats\batch\infra\persistence\jpa\repository\VehicleTripAnomalyJpaRepository.class
+ma\zrad\system\stats\batch\infra\persistence\jpa\adapter\VehicleTripAnalysisRepositoryAdapter.class
+ma\zrad\system\stats\batch\infra\persistence\jpa\repository\EventBusinessJpaRepository.class

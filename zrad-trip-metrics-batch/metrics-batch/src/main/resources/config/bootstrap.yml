@@ -1,0 +1,49 @@
+#===============================================================================
+
+application:
+  name-key: batch-trip-metrics
+  context-path: zrad-metrics
+  service-id: zrad-metrics-batch-service
+  version: v#project.version#
+  java.version: #java.build.version#
+
+  # move to config server
+  feign:
+    client:
+      b2b:
+
+        ref-core:
+          enabled: true
+          url: http://localhost:8011
+          #service-id: zrad-ref-core-dev
+          context-path: zrad-ref-core
+          service-name: ref-core-local
+          service-url: ${application.feign.client.b2b.ref-core.url}/${application.feign.client.b2b.ref-core.context-path}
+
+      config:
+        retry:
+          enabled: true
+          max-attempts: 3
+          interval: 1000
+
+  # move to config server
+  batch:
+    chuck-size: 50
+    partition:
+      grid-size: 5
+
+
+#===============================================================================
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+  banner:
+    location: classpath:/boot/banner.txt
+
+  cloud:
+    config:
+      uri: http://${CONFIG_SERVICE_NAME:localhost}:${CONFIG_PORT:3020}/${CONFIG_CONTEXT_PATH:zrad-cloud-config-server}
+      name: trip-metrics-batch
+      label: ${DEFAULT_BRANCH:develop} # which branch in git remote used to load config, use env variable foo

@@ -1,0 +1,8 @@
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-trip-metrics-batch\metrics-infrastructure\src\main\java\ma\zrad\system\metrics\batch\infra\config\ZradDbConfig.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-trip-metrics-batch\metrics-infrastructure\src\main\java\ma\zrad\system\metrics\batch\infra\config\ZradScanPackages.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-trip-metrics-batch\metrics-infrastructure\src\main\java\ma\zrad\system\metrics\batch\infra\mapper\GlobalMapper.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-trip-metrics-batch\metrics-infrastructure\src\main\java\ma\zrad\system\metrics\batch\infra\persistence\jpa\adapter\EventBusinessRepositoryAdapter.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-trip-metrics-batch\metrics-infrastructure\src\main\java\ma\zrad\system\metrics\batch\infra\persistence\jpa\adapter\VehicleTripSummaryRepositoryAdapter.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-trip-metrics-batch\metrics-infrastructure\src\main\java\ma\zrad\system\metrics\batch\infra\persistence\jpa\repository\EventBusinessJpaRepository.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-trip-metrics-batch\metrics-infrastructure\src\main\java\ma\zrad\system\metrics\batch\infra\persistence\jpa\repository\VehicleTripDailySummaryJpaRepository.java
+C:\mfichtali\projects\zrad-system\zrad-factory\zrad-trip-metrics-batch\metrics-infrastructure\src\main\java\ma\zrad\system\metrics\batch\infra\persistence\jpa\repository\VehicleTripMonthlySummaryJpaRepository.java

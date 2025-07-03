@@ -1,0 +1,23 @@
+#===============================================================================
+
+application:
+  name-key: zrad-ref-core
+  context-path: zrad-ref-core
+  service-id: zrad-ref-core-service
+  version: v1.0.0
+  java.version: 21
+
+#===============================================================================
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+  banner:
+    location: classpath:/boot/banner.txt
+
+  cloud:
+    config:
+      uri: http://${CONFIG_SERVICE_NAME:localhost}:${CONFIG_PORT:3020}/${CONFIG_CONTEXT_PATH:zrad-cloud-config-server}
+      name: ref-core-service
+      label: ${DEFAULT_BRANCH:develop} # which branch in git remote used to load config, use env variable foo

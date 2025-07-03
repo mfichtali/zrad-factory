@@ -1,0 +1,53 @@
+#===============================================================================
+
+application:
+  name-key: batch-vpi
+  context-path: zrad-vpi
+  service-id: zrad-vpi-batch-service
+  version: v#project.version#
+  java.version: #java.build.version#
+
+  ftp-server-config:
+    host: ${FTP_HOST:localhost}
+    port: ${FTP_PORT:21}
+    user: ${FTP_USER:zrad}
+    password: ${FTP_PASSWORD:mypass}
+    remote-data-dir: /zrad
+    remote-archived-dir: /archived
+    remote-incident-dir: /incidents
+    remote-report-dir: /reports
+    data-port-range: 21100-21110
+
+  # move to config server
+  batch:
+    chuck-size: 50
+    file:
+      delimiter: ";"
+      nbr-fields-per-line: 5
+      default-max-length-line: 50
+      extension: ".csv"
+      incident-pattern-file-per-chunk: "%s-INCIDENT-PART-%d.txt"
+      incident-pattern-file-fusion: "%s_INCIDENT_IMPORT_VP_%s_%s_%s_%s.txt"
+      report-filename: "%s_REPORT_IMPORT_VP_%s_%s_%s_%s.json"
+      pattern: ^R[0-9]{2}_[a-zA-Z0-9]{6}_[0-9]{8}_[0-9]{3}\.csv$
+      pattern-compile: ^(R[0-9]{2})_([a-zA-Z0-9]{6})_([0-9]{8})_([0-9]{3})\.csv$
+      fields.constraints:
+        speed:
+          min: 0
+          max: 300
+
+
+#===============================================================================
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+  banner:
+    location: classpath:/boot/banner.txt
+
+  cloud:
+    config:
+      uri: http://${CONFIG_SERVICE_NAME:localhost}:${CONFIG_PORT:3020}/${CONFIG_CONTEXT_PATH:zrad-cloud-config-server}
+      name: trip-importer-batch
+      label: ${DEFAULT_BRANCH:develop} # which branch in git remote used to load config, use env variable foo
